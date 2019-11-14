@@ -18,17 +18,17 @@ void loop(){
 
 
 
-if (GetDistance()>20){
-  myServo.write(180);
+if (GetDistance()>20){ //checking if distance is over 20
+  myServo.write(180); // sends servo full speed to right
 }
-if (GetDistance()==21){
-  myServo.write(90);
+if (GetDistance()==21){ //checking if distance is equal to 21
+  myServo.write(90); // stops servo
 }
-if (GetDistance()<22){
-  myServo.write(0);
+if (GetDistance()<22){ // checking if distace is over 22
+  myServo.write(0); // sends servo full speed to left.
 }
 }
-int GetDistance()
+int GetDistance() // defines GetDistance() function as something that fetches distance from the ultrasonic sensor.
 {
   digitalWrite(trigPin, LOW);
   delayMicroseconds(2);
