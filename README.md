@@ -7,6 +7,7 @@ Assignment that shows how to use functions in arduino
 
 ### How To Build:
 Fritzing Diagram:
+![joe mama](CaptureFunctions_Assignment.PNG)
 
 
 ## Hello_LCD
